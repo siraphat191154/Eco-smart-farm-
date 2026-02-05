@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project AI - Real-time Detection</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- ฟอนต์ไทย -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- TensorFlow.js และ Teachable Machine -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.21.0/dist/tf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+</head>
+
+<body>
+  <h1>Project AI Application</h1>
+
+  <div class="camera-container">
+    <video id="webcam" autoplay playsinline></video>
+  </div>
+
+  <div id="result">ผลการวิเคราะห์: -</div>
+
+  <div class="buttons">
+    <button id="startBtn" class="start-btn">Start</button>
+    <button id="stopBtn" class="stop-btn">Stop</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
